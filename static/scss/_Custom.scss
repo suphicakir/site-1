@@ -1,0 +1,30 @@
+$bg_facebook : #0866FF;
+$bg_twitter_x: #0F1419;
+$bg_instagram: #B439A3;
+$bg_bluesky: #0085FF;
+$bg_linkedin: #0A66C2;
+
+.bg-facebook {
+    background-color: $bg_facebook;
+}
+
+.bg-twitter-x {
+    background-color: $bg_twitter_x;
+}
+
+.bg-instagram {
+    background-color: $bg_instagram;
+}
+
+.bg-bluesky {
+    background-color: $bg_bluesky;
+}
+
+.bg-linkedin {
+    background-color: $bg_linkedin;
+}
+
+.google_iframe {
+    width: 500px;
+    height: 500px;
+}

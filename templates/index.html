@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <!-- Sayfanın karakter seti -->
+    <meta charset="UTF-8">
+
+    <!-- Mobil uyumluluk -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sayfa açıklaması: Arama sonuçlarında görünen özet -->
+    <meta name="description" content="Sayfa açıklaması">
+
+    <!-- Anahtar kelimeler (artık Google için çok önemli değil ama bazı arama motorları hâlâ kullanır) -->
+    <meta name="keywords" content="Anahtar kelimeler">
+
+    <!-- Sayfa yazarı -->
+    <meta name="author" content="Adı Soyadı">
+
+    <!-- Sayfa başlığı (SEO'da en önemli alanlardan biri, <title> etiketi içinde yazılır) -->
+    <title>Bootstrap demo</title>
+
+    <!-- Bootrst5 Stylesheet dosya bağlantısı bootstrap.min.css -->
+    <link href="../static/css/Bootstrap.5.3.6.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="site_header">
+        <!-- TOP HEADER -->
+        <section id="top_header" class="bg-primary py-3 text-white d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 pt-2">
+                        <!-- TELEFON NO -->
+                        <h6><i class="bi bi-phone-vibrate text-light"></i> 0 (111) 222 33 44</h6>
+                    </div>
+                    <div class="col-sm-4 pt-2 ">
+                        <!-- E-POSTA -->
+                        <h6><i class="bi bi-envelope-at text-light"></i> info@mail.com</h6>
+                    </div>
+                    <div class="col-sm-4 pt-2 text-end">
+                        <!-- SOSYAL MEDYA ICONS -->
+                        <a href="#" class="btn btn-primary bg-facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-primary bg-twitter-x"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-primary bg-instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-primary bg-bluesky"><i class="bi bi-bluesky"></i></a>
+                        <a href="#" class="btn btn-primary bg-linkedin><i class=" bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TOP HEADER END -->
+
+        <!-- NAVBAR -->
+        <section id="navbar">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">HERO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SERVICE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TEAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ANALYSIS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- NAVBAR END-->
+    </header>
+    <!-- HEADER END-->
+
+    <!-- HERO BANNER -->
+    <section id="hero_banner" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 align-self-center">
+                    <!-- EHRO LEFT SIDE -->
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ratione dolores autem
+                        dignissimos dolor, et veniam a! At, recusandae inventore! In at aut, soluta dicta molestiae enim
+                        architecto perspiciatis autem.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#join_us">Join Us</a>
+
+                    <!-- MODAL -->
+                    <div class="modal fade" id="join_us" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">JOIN US</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead">Fill out this form.</p>
+                                    <!-- MODAL FORM KONTROL -->
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="full_name" class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="full_name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">Phone</label>
+                                            <input type="text" class="form-control" id="phone">
+                                        </div>
+                                    </form>
+                                    <!-- MODAL FORM KONTROL END -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">SUBMIT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL -->
+                </div>
+                <div class="col-sm-6 pt-4">
+                    <!-- HERO RIGHT SIDE -->
+                    <img src="../media/img/coder.svg" class="img-fluid" alt="Coder Image">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- HERO BANNER END -->
+
+    <!-- SERVICE -->
+    <section class="py-5" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center mb-3">
+                    <!-- SERVICE CARD -->
+                    <div class="card">
+                        <img src="https://picsum.photos/id/23/300/200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Easy to Usee</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+                                perspiciatis debitis ea ratione repellendus consectetur id, soluta temporibus esse
+                                itaque?</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- SERVICE CARD END -->
+                <div class="col-sm-4 text-center mb-3">
+                    <!-- SERVICE CARD -->
+                    <div class="card">
+                        <img src="https://picsum.photos/id/35/300/200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Awesome Design</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+                                perspiciatis debitis ea ratione repellendus consectetur id, soluta temporibus esse
+                                itaque?</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- SERVICE CARD END -->
+                <div class="col-sm-4 text-center mb-3">
+                    <!-- SERVICE CARD -->
+                    <div class="card">
+                        <img src="https://picsum.photos/id/175/300/200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Easy to Customize</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+                                perspiciatis debitis ea ratione repellendus consectetur id, soluta temporibus esse
+                                itaque?
+
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-lg">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- SERVICE CARD END -->
+            </div>
+        </div>
+    </section>
+    <!-- SERVICE END -->
+
+    <!-- ANALYSIS -->
+    <section id="analysis" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 pt-5">
+                    <!-- LEFT SIDE -->
+                    <img src="../media/img/Investing.svg" class="img-fluid" alt="Investing">
+                </div>
+                <div class="col-sm-6 d-flex flex-column justify-content-center ">
+                    <!-- RIGHT SIDE -->
+                    <h3>Alalysis for Business Opportunities</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam blanditiis consequatur,
+                        tempore commodi, mollitia delectus esse tenetur culpa veritatis totam laudantium animi harum
+                        aperiam voluptatem dignissimos excepturi laborum debitis.</p>
+                    <div>
+                        <a href="#" class="btn btn-outline-primary btn-lg">See More Information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ANALYSIS END -->
+
+    <!-- SERVICE -->
+    <section id="service" class="py-5">
+        <div class="container">
+            <div class="row mb-3 text-center">
+                <div class="col-sm-8 offset-sm-2">
+                    <h3>Our Team</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum
+                        consequatur ut non in qui!</p>
+                </div>
+            </div>
+
+            <!-- PERSON CARD -->
+            <div class="row">
+                <div class="col-sm-4 mb-3 text-center">
+                    <div class="card p-3">
+                        <img src="../media/img/team_01.jpg" class="card-img-top img-fluid mb-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">David Clark</h5>
+                            <p class="card-text">Graphic Designer</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-bluesky"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PERSON CARD END -->
+                <div class="col-sm-4 mb-3 text-center">
+                    <div class="card p-3">
+                        <img src="../media/img/team_02.jpg" class="card-img-top img-fluid mb-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">David Clark</h5>
+                            <p class="card-text">Web Designer</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-bluesky"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mb-3 text-center">
+                    <div class="card p-3">
+                        <img src="../media/img/team_03.jpg" class="card-img-top img-fluid mb-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">David Clark</h5>
+                            <p class="card-text">Web Developer</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="btn btn-outline-primary btn-lg"><i class="bi bi-bluesky"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICE END -->
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 d-flex flex-column justify-content-center align-items-center">
+                    <!-- LEFT SIDE -->
+                    <img src="../media/img/faq.svg" class="img-fluid" alt="FAQ">
+                </div>
+                <div class="col-sm-7 align.self.center pt-3">
+                    <!-- RIGHT SIDE -->
+                    <div class="mb-4">
+                        <h2>FAQ Area</h2>
+                    </div>
+
+                    <!-- ANCHOR : ACORDION AREA -->
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Lorem ipsum dolor sit amet
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat,
+                                    ligula non mattis facilisis, arcu nunc imperdiet nisl, vel vestibulum sem quam non
+                                    nisl. Integer porttitor gravida metus, non semper dui tristique at. Fusce vitae est
+                                    eget nisi tincidunt semper. Praesent a sapien sagittis, semper erat vel, consequat
+                                    sem. Curabitur at eleifend augue. Ut ultricies placerat aliquet. Aliquam eu tellus
+                                    luctus, vehicula mi ac, pellentesque diam. Aliquam mollis purus ac tortor feugiat
+                                    posuere. Aliquam posuere nisi dolor. In faucibus dolor ut suscipit vulputate. Etiam
+                                    volutpat aliquam leo eget fermentum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Etiam quis metus euismod
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Etiam quis metus euismod, blandit enim in, tempor tellus. Nam posuere nibh et velit
+                                    rutrum, et consequat felis pretium. Mauris at odio congue nibh consectetur
+                                    dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                    fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis egestas. Nunc fringilla rhoncus turpis, quis semper ipsum
+                                    sollicitudin eget. Nam in sem aliquet, rhoncus dui a, vestibulum mi. Duis ultricies
+                                    elit eget lacinia aliquet. Fusce sit amet porta eros, et sodales lorem. Vestibulum
+                                    dolor eros, feugiat sit amet sodales ac, consectetur ac ipsum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Donec porta, orci et porttitor viverra
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Donec porta, orci et porttitor viverra, lectus odio malesuada ex, euismod dignissim
+                                    velit enim in est. Nam ornare orci magna, vitae finibus nibh tempor nec. Ut libero
+                                    metus, feugiat eu risus eget, dapibus rhoncus ante. Morbi enim orci, sagittis sed
+                                    nulla commodo, mollis cursus metus. Praesent nisi dui, auctor vitae dignissim a,
+                                    aliquet quis arcu. Vestibulum semper justo nibh, at volutpat orci volutpat vel. Duis
+                                    vitae neque id sem interdum venenatis eget eu est. Nam et lorem ligula. Integer
+                                    malesuada lectus sed mauris malesuada pulvinar. Fusce nisi ante, posuere sed ante
+                                    et, ornare commodo eros. Curabitur massa ante, finibus a leo pulvinar, auctor
+                                    efficitur sapien. Donec et augue massa.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ END -->
+
+    <!-- ANCHOR : CONTACT -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <!-- ANCHOR : CONTACT FORM -->
+                    <h3>Contact Us</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus.</p>
+
+                    <form class="py-3">
+                        <div class="container">
+                            <div class="row mb-3">
+                                <div class="col-sm">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="full_name"
+                                            aria-describedby="full_name" placeholder="Full Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" id="e-mail"
+                                            aria-describedby="e-mail" placeholder="Email address">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="subject"
+                                            aria-describedby="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="mb-3">
+                                        <textarea class="form-control" id="text_message" rows="10" placeholder="Enter your message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <button type="submit" class="btn btn-outline-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-5 d-flex flex-row justify-content-center align-items-center">
+                    <!-- ANCHOR : CONTACT MAP -->
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1788.3537011361368!2d28.905668382370614!3d41.07685172098918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1750285387159!5m2!1str!2str"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"  class="google_iframe"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTACT END -->
+
+    <!-- ANCHOR : FOOTER -->
+    <footer id="site_footer" class="pt-3 pb-3 bg-secondary text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <b><h6 class="lead"><i>Copyright</i> <i class="bi bi-c-square"></i> 2021 All Right Reserved</h6></b>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+
+    <!-- Bootstrap5 JS Bağlantısı. bootstrap.bundle.min.js -->
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
